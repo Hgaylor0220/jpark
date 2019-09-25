@@ -1,35 +1,44 @@
 using System;
 using System.Collections.Generic;
-
+//Back End
 namespace Park {
      class Dino 
     {
          private string _name;
          private string _habitat;
          private string _danger;
+         private string _type;
 
      
-        public Dino (string name, string habitat, string danger)
+        public Dino (string name, string habitat, string danger, string type)
         {
          _name = name;
          _habitat = habitat;
          _danger  = danger;
+         _type = type;
 
         }
-    public static void Main()
-    {
-        Dino tRex = new Dino("Philip", "Mountain", "Hella");
-        Dino triceratops = new Dino ("Raven", "Jungle", "Lil' snappy");
-        Dino brontosaurus = new Dino ("Brian", "Jungle", "Chillin");
-        Dino raptor = new Dino("Felicia", "Fields", "Angsty");
+   
+        public string GetName()
+        {
+            return _name;
+        }
+        public string GetHabitat()
+        {
+            return _habitat;
+        }
 
-        Console.WriteLine("Who would you like to track? Raven, Brian, Felicia or Phillip?");
-        string whichDino = Console.ReadLine();
-        
+        public string GetDanger()
+        {
+            return _danger;
+        }
+
+        public string GetType()
+        {
+            return _type;
+        }
+
+
     }
-    }
-    
-    
-    
-    // FRONT END
+
 }
