@@ -38,7 +38,6 @@ namespace Park {
             return _type;
         }
 
-
     }
 
 }

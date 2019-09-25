@@ -23,14 +23,34 @@ public static void Main()
     {
         Console.WriteLine("Pick a Dino to learn about: Philip, Raven, Brian, Felicia");
         string userChoice = Console.ReadLine();
-           if(userChoice == "Philip")
+           if(userChoice.ToLower() == "philip")
            {
                 Console.WriteLine(tRex.GetName());
                 Console.WriteLine(tRex.GetHabitat());
                 Console.WriteLine(tRex.GetDanger());
                 Console.WriteLine(tRex.GetType());
                 }               
-                
+            if(userChoice.ToLower() == "raven")
+           {
+                Console.WriteLine(triceratops.GetName());
+                Console.WriteLine(triceratops.GetHabitat());
+                Console.WriteLine(triceratops.GetDanger());
+                Console.WriteLine(triceratops.GetType());
+                } 
+            if(userChoice.ToLower() == "brian")
+           {
+                Console.WriteLine(brontosaurus.GetName());
+                Console.WriteLine(brontosaurus.GetHabitat());
+                Console.WriteLine(brontosaurus.GetDanger());
+                Console.WriteLine(brontosaurus.GetType());
+                }  
+            if(userChoice.ToLower() == "felicia")
+           {
+                Console.WriteLine(raptor.GetName());
+                Console.WriteLine(raptor.GetHabitat());
+                Console.WriteLine(raptor.GetDanger());
+                Console.WriteLine(raptor.GetType());
+                } 
            
     }
          else if(toc.ToLower() == "create")
@@ -46,7 +66,11 @@ public static void Main()
 
              Console.WriteLine("Enter your dino's danger level");
             string dinoDanger = Console.ReadLine();
-        }
+
+            Console.WriteLine("Here is your dino!, Your dino is a " + " " + dinoType + " named " + " " + dinoName + " living in " +   " " + dinoHab + " ."+ " Danger level is " + dinoDanger);
+
+            //attempted to create setters to display the informaiton that the user defined and it failed. 
         
+        }
     }
  }
