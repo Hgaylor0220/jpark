@@ -1,0 +1,11 @@
+/Users/Guest/Desktop/jurassicPark/obj/Debug/netcoreapp2.2/jpark.csprojAssemblyReference.cache
+/Users/Guest/Desktop/jurassicPark/obj/Debug/netcoreapp2.2/jpark.csproj.CoreCompileInputs.cache
+/Users/Guest/Desktop/jurassicPark/obj/Debug/netcoreapp2.2/jpark.AssemblyInfoInputs.cache
+/Users/Guest/Desktop/jurassicPark/obj/Debug/netcoreapp2.2/jpark.AssemblyInfo.cs
+/Users/Guest/Desktop/jurassicPark/bin/Debug/netcoreapp2.2/jpark.deps.json
+/Users/Guest/Desktop/jurassicPark/bin/Debug/netcoreapp2.2/jpark.runtimeconfig.json
+/Users/Guest/Desktop/jurassicPark/bin/Debug/netcoreapp2.2/jpark.runtimeconfig.dev.json
+/Users/Guest/Desktop/jurassicPark/bin/Debug/netcoreapp2.2/jpark.dll
+/Users/Guest/Desktop/jurassicPark/bin/Debug/netcoreapp2.2/jpark.pdb
+/Users/Guest/Desktop/jurassicPark/obj/Debug/netcoreapp2.2/jpark.dll
+/Users/Guest/Desktop/jurassicPark/obj/Debug/netcoreapp2.2/jpark.pdb
