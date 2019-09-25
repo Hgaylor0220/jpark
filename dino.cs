@@ -13,10 +13,10 @@ public static void Main()
 
         List<Dino> Dinos = new List<Dino>() {tRex, triceratops, brontosaurus, raptor};
 
+        
+
         Console.WriteLine("Who would you like to track dinosours in our park or create your own?[track or create]");
         string toc = Console.ReadLine();
-
-
 
 
         if(toc.ToLower() == "track")
@@ -54,7 +54,9 @@ public static void Main()
            
     }
          else if(toc.ToLower() == "create")
+        
         {
+            
             Console.WriteLine("Create a new Dino! Enter a type of dino");
             string dinoType = Console.ReadLine();
 
@@ -67,10 +69,32 @@ public static void Main()
              Console.WriteLine("Enter your dino's danger level");
             string dinoDanger = Console.ReadLine();
 
+        // created a new dino object for the user to add their dino to the list.
+            Dino userDino = new Dino(dinoType, dinoName, dinoDanger, dinoType);
+             Dinos.Add(userDino);
+
             Console.WriteLine("Here is your dino!, Your dino is a " + " " + dinoType + " named " + " " + dinoName + " living in " +   " " + dinoHab + " ."+ " Danger level is " + dinoDanger);
 
-            //attempted to create setters to display the informaiton that the user defined and it failed. 
+            
+
+
         
         }
+        //repositioned the question of list of dino to ask rather you want to create a list.
+            Console.WriteLine("Would you like to see a list of your dinos?[Y for yes N for No.]");
+            string listOfDinos = Console.ReadLine();
+                if(listOfDinos.ToLower() == "y" )
+                {
+                    //created a foreach loop to add the user created dino to the list of dinos
+                    foreach(Dino dinosaur in Dinos)
+                    {
+                        Console.WriteLine("-------------");
+                        Console.WriteLine(dinosaur.GetType());
+                        Console.WriteLine(dinosaur.GetName());
+                        Console.WriteLine(dinosaur.GetHabitat());
+                        Console.WriteLine(dinosaur.GetDanger());
+                    }
+                }
     }
  }
+            //attempted to create setters to display the informaiton that the user defined and it failed. 

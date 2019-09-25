@@ -9,7 +9,7 @@ namespace Park {
          private string _danger;
          private string _type;
 
-     
+       
         public Dino (string name, string habitat, string danger, string type)
         {
          _name = name;
@@ -18,7 +18,7 @@ namespace Park {
          _type = type;
 
         }
-   
+   //added getters for the user to be able to obtain the information about the private dino. 
         public string GetName()
         {
             return _name;
